@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Ballet' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Asul' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#apresentacao">Apresentação</a>
+          <a href="#especialidade1">Especialidades</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#autoconhecimento">Autoconhecimento</a>
+        </div>
+      </div>
+      <h1 id="menu-text" style="font-family: 'Ballet'; cursor: pointer; margin-left: 1rem;">Alessandra Magalhães</h1>
+      <span id="menu-btn" style="font-size:30px;cursor:pointer; margin: 2.5rem 1rem ;"
+        onclick="openNav()">&#9776;</span>
+    </div>
+  </header>
+  <tbody>
+    <div id="apresentacao" class="row-apresentacao" style="display: one;">
+      <div class="column-apresentacao" id="colum-apresentacao1">
+
+        <div class="slideshow-container" style="margin-top: -8px;">
+
+          <div class="mySlides fade">
+            <img src="./images/IMG_1.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="./images/IMG_2.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="./images/IMG_3.jpeg" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+      </div>
+
+      <div class="column-apresentacao" id="colum-apresentacao2">
+        <h2>Olá! Sejam muito bem vindos!</h2>
+        <p style="font-size: 1.4rem;">Eu sou a Alessandra Magalhães. Sou psicóloga, formada pela Universidade Federal de
+          Alagoas, sou especialista
+          em <b>Terapia Cognitivo Comportamental</b>, formação em <b>Terapia do Esquema, Mestra em Psicologia e Saúde
+            Mental</b> e
+          atualmente em formação em Terapia de Casal.
+
+
+          Sou apaixonada e dedicada ao <b>crescimento pessoal e empoderamento de mulheres que buscam por melhores
+            relacionamentos</b> e pelo <b>despertar de seu Autoconhecimento</b>.
+
+
+          Através do meu trabalho, enquanto psicóloga clínica, contribui para o processo evolutivo de inúmeras pessoas,
+          auxiliando-as a descobrir seu verdadeiro eu, a gerir suas emoções de forma eficaz, a desenvolver
+          autocompaixão, acolhimento e empatia por si mesma, alcançando dessa forma uma melhor sensação de bem estar.
+        </p>
+
+        <div class="redes">
+          <h1 style="font-size: 1rem; text-align: center; margin-left: -2.5rem;">Acompanhe meu trabalho nas redes
+            sociais:</h1>
+          <ui class="links">
+            <a href="https://www.facebook.com/psialessandra.magalhaes" class="link" style="margin-right: 2rem;"><img
+                src="./images/simbolo-de-aplicativo-do-facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/psialemagalhaes/" class="link" style="margin-right: 2rem;"><img
+                src="./images/instagram.png" alt=""></a>
+            <a href="https://www.threads.net/@psialemagalhaes" class="link" style="margin-right: 2rem; width: 75%;"><img
+                src="./images/Threads-Logo.png" alt=""></a>
+            <a href="#" class="link" style="margin-right: 2rem;"><img src="./images/tik-tok.png" alt=""></a>
+
+          </ui>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="especialidade" style="padding:47rem 0 2rem 0; display: nne;">
+      <div class="row-especialidade">
+        <div class="column-especialidade" id="especialidade1">
+          <h2 style="font-size: 1.5rem; margin-top: 2.5rem;">Meu Maior Objetivo é Desenvolver o Potencial Humano.</h2>
+          <p>Meu trabalho como psicóloga clínica envolve a integração cuidadosa destas abordagens, a Terapia Cognitivo
+            Comportamental e a Terapia do Esquema, adaptando-as às
+            necessidades individuais de cada paciente. Através de um ambiente de apoio, confidencial e não julgador, meu
+            objetivo é ajudar as pessoas a explorar suas emoções, compreender os padrões de pensamento que as limitam e
+            desenvolver <b>habilidades para promover a mudança positiva em suas vidas</b>.
+            Cada sessão é uma jornada de autoconhecimento, crescimento e cura, guiada por duas abordagens psicológicas
+            sólidas que, juntas, podem iluminar o caminho em direção a uma saúde mental duradoura e a uma qualidade de
+            vida melhor.
+          </p>
+
+          <button type="button" id="btn-especialidade"> <span>Leia Mais</span> </button>
+        </div>
+        <div id="especialidade2" class="column-especialidade">
+          <h2 style="font-family: 'Ballet';">Especialidade</h2>
+          <hr style="height: 0.25rem; background-color: black; width: 14%; margin-left: 0.3rem; margin-top: -1.4rem;">
+          <ui>
+            <li>Terapia Cognitivo Comportamental</li>
+            <li>Terapia do Esquema</li>
+            <li>Psicóloga Me. Alessandra Andressa Alves Magalhães da Rocha CRP 15/4178
+            </li>
+          </ui>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+    <div class="row-servicos" style="padding-top:17rem; display: nne;">
+      <h2 id="servicos">Serviços</h2>
+
+      <div class="column-servicos" id="column-servicos1" style=" background-color:#aaa;">
+        <img class="imgs-servicos" src="./images/localizacao-do-mapa.png">
+        <h2 class="text-servico">Psicoterapia Individual - Presencial</h2>
+        <p>Clicando no botão abaixo você me encontrará pessoalmete</p>
+        <button class="btn-servico"><span>Quero lhe encontrar </span></button>
+      </div>
+
+      <div class="column-servicos" id="column-servicos2" style="background-color:#bbb;">
+        <img class="imgs-servicos" src="./images/conversa-em-grupo.png">
+        <h2 class="text-servico">Psicoterapia Individual- On-line</h2>
+        <p>Clique no botão abaixo e entre em contato para saber mais sobre Psicoterapia</p>
+        <button class="btn-servico">
+          <a href="https://api.whatsapp.com/send?phone=5582993314721" class="link"><span>Quero fazer terapia
+            </span></a></button>
+      </div>
+
+      <div class="column-servicos" id="column-servicos3" style="background-color:#ccc;">
+        <img class="imgs-servicos" src="./images/livro.png">
+        <h2 class="text-servico">Clube do Livro - Autoconhecimento na Prática.</h2>
+        <p>Venha fazer parte do nosso Club do Livro, você também</p>
+        <button class="btn-servico"><span>Quero entrar pro Clube </span></button>
+      </div>
+
+      <div class="column-servicos" id="column-servicos4" style="background-color:#ddd; display:none">
+        <h2 class="text-servico">Comunidade Caminhos da Transformação</h2>
+        <p>Some text..</p>
+        <button class="btn-servico">Quero conhecer a comunidade </button>
+      </div>
+    </div>
+
+    <div id="autoconhecimento" class="row-autoconhecimento" style="display: nne;">
+      <div id="autoconhecimento1" class="column-autoconhecimento">
+        <h2>Autoconhecimento</h2>
+        <h4>Porque falar de Autoconhecimento?</h4>
+        <hr style="height: 0.25rem; background-color: black; width: 10%; margin-left: 0.1rem; margin-top: -1.4rem;">
+        <p style="font-size: 19px;">O Autoconhecimento é um pilar fundamental para ter uma vida significativa e
+          relacionamentos saudáveis.
+
+
+          O autoconhecimento é a jornada de explorar profundamente quem somos, nossas emoções, pensamentos, valores e
+          motivações. É uma busca contínua que, embora possa ser desafiadora, é essencial para uma vida plena e para
+          desenvolver boas relações.
+
+
+          Quando nos conhecemos bem, torna-se mais fácil ser autêntico. Isso significa que somos fiéis a nós mesmos,
+          nossos valores e crenças. A autenticidade é a base para relacionamentos genuínos, pois permite que os outros
+          nos conheçam verdadeiramente, criando conexões mais profundas.
+
+
+          Outro ponto é que o autoconhecimento nos ajuda a entender nossas próprias emoções e reações. Isso é crucial
+          para lidar com conflitos de forma construtiva e empática, pois nos permite comunicar nossas necessidades e
+          compreender as dos outros.
+
+
+          Conhecer nossos pontos fortes e fracos nos tornam mais resilientes. Sabia? Quando entendemos nossas fraquezas,
+          podemos trabalhar nelas, e quando conhecemos nossas habilidades, podemos usá-las para superar desafios. Isso
+          nos ajuda a enfrentar as adversidades da vida e a apoiar nossos entes queridos em tempos difíceis.
+        </p>
+
+        <div class="redes" id="redes-auto" style="padding: 1rem;">
+          <ui class="links">
+            <a href="https://www.facebook.com/psialessandra.magalhaes" class="link" style="margin-right: 2rem;"><img
+                src="./images/simbolo-de-aplicativo-do-facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/psialemagalhaes/" class="link" style="margin-right: 2rem;"><img
+                src="./images/instagram.png" alt=""></a>
+            <a href="https://www.threads.net/@psialemagalhaes" class="link" style="margin-right: 2rem; width: 75%;"><img
+                src="./images/Threads-Logo.png" alt=""></a>
+            <a href="#" class="link" style="margin-right: 2rem;"><img src="./images/tik-tok.png" alt=""></a>
+
+          </ui>
+        </div>
+
+      </div>
+      <div id="autoconhecimento2" class="column-autoconhecimento">
+        <div class="slideshow-container2">
+
+          <div class="mySlides2 fade2">
+            <img src="./images/IMG_4.jpeg" style="width:100%">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </tbody>
+  <script type="text/javascript" src="script.js"> </script>
+
+</body>
+
+</html>

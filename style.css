@@ -1,0 +1,604 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'Asul';
+    font-size: 22px;
+    text-align: justify;
+    line-height: 1.8;
+
+}
+@media only screen and (max-width:321px) {
+
+    /* For mobile phones: */
+    body{
+        font-size: x-large;
+    }
+}
+
+
+/* Style Menu */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* Style Apresentação */
+/* Create two equal columns that floats next to each other */
+.column-apresentacao {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+.column-apresentacao h2 {
+    animation: animTitle 2s;
+}
+
+.column-apresentacao p {
+    animation: animContent 2s;
+}
+
+@keyframes animTitle {
+    from {
+        /* Add starting values for animation */
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        /* Add Ending values for animation */
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animContent {
+    from {
+        /* Add starting values for animation */
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        /* Add Ending values for animation */
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Clear floats after the columns */
+.row-apresentacao:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.links .link img {
+    width: 35%;
+    margin-left: 5rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width:1025px) {
+    .nav h1{
+        margin-block: auto;
+    }
+    /* For tablets: */
+    #colum-apresentacao1 {
+        width: 80%;
+        padding: 0;
+    }
+
+    #colum-apresentacao2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:321px) {
+
+    /* For mobile phones: */
+    #colum-apresentacao1,
+    #colum-apresentacao2 {
+        width: 100%;
+    }
+
+    #menu-text {
+        font-size: x-large;
+        margin-block: auto;
+    }
+
+    #colum-apresentacao2 {
+        padding-top: 10rem;
+    }
+
+    .redes ui a {
+        margin-left: -35px;
+    }
+
+    .redes h1 {
+        font-variant: small-caps;
+    }
+
+    .redes ui {
+        margin: 20px 0px 10px -50px;
+    }
+}
+
+.redes ui {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes ui a {
+    text-decoration: none;
+}
+
+/* Style Especialidade */
+/* Create two equal columns that floats next to each other */
+.column-especialidade {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row-especialidade:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#btn-especialidade {
+    border-radius: 4px;
+    background-color: #f9f8f8;
+    border: none;
+    color: #030000;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#btn-especialidade span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#btn-especialidade span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#btn-especialidade:hover span {
+    padding-right: 25px;
+}
+
+#btn-especialidade:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width:1025px) {
+
+    /* For tablets: */
+    #especialidade1 {
+        width: 80%;
+        padding: 0.5rem;
+    }
+
+    #especialidade2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:321px) {
+
+    /* For mobile phones: */
+    #especialidade1,
+    #especialidade2 {
+        width: 100%;
+        margin-top: 40rem;
+    }
+
+    #especialidade2 {
+        margin-top: 62rem;
+    }
+
+    #btn-especialidade {
+        margin: initial;
+    }
+}
+
+
+/* Style Serviços */
+
+/* Create four equal columns that floats next to each other */
+.column-servicos {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+
+}
+
+/* Clear floats after the columns */
+.row-servicos:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width:1025px) {
+
+    /* For tablets: */
+    #column-servicos1 {
+        width: 80%;
+        padding: 0;
+    }
+
+    #column-servicos2 {
+        width: 100%;
+    }
+
+    #column-servicos3 {
+        width: 80%;
+        padding: 0;
+    }
+
+    #column-servicos4 {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:321px) {
+
+    /* For mobile phones: */
+    .row-servicos {
+        margin-top: -16rem;
+    }
+
+    #column-servicos1,
+    #column-servicos2,
+    #column-servicos3,
+    #column-servicos4 {
+        width: 100%;
+    }
+
+    #column-servicos2 .btn-servico {
+        margin-top: -1rem;
+        ;
+    }
+}
+
+
+.imgs-servicos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+.text-servico {
+    font-size: 18px;
+}
+
+.column-servicos p {
+    font-size: 20px;
+    text-align: center;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-servico {
+    border-radius: 4px;
+    background-color: #f9f8f8;
+    border: none;
+    color: #030000;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: -webkit-center;
+
+}
+
+.btn-servico span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-servico span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-servico:hover span {
+    padding-right: 25px;
+}
+
+.btn-servico:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* Style Autoconhecimmento */
+
+/* Create two equal columns that floats next to each other */
+.column-autoconhecimento {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+@media only screen and (max-width:1025px) {
+
+    /* For tablets: */
+    #autoconhecimento1 {
+        width: 80%;
+        padding: 0;
+    }
+
+    #autoconhecimento2 {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width:321px) {
+
+    /* For mobile phones: */
+    #autoconhecimento1,
+    #autoconhecimento2 {
+        width: 100%;
+    }
+
+    #autoconhecimento1{
+        margin-bottom: 8rem;
+    }
+    #autoconhecimento1 .redes{
+        margin-top: -2rem;
+    }
+    #autoconhecimento2 {
+        margin-top: 76rem;
+    }
+}
+
+/* Clear floats after the columns */
+.row-autoconhecimento:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.mySlides2 img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container2 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev2,
+.next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover,
+.next2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade2 {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade2 {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev2,
+    .next2,
+    .text2 {
+        font-size: 11px
+    }
+}
